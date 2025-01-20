@@ -1,0 +1,21 @@
+{
+ "name": "smart-contract-upgrade",
+ "devDependencies": {
+  "@nomicfoundation/hardhat-ethers": "^3.0.8",
+  "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+  "@openzeppelin/hardhat-upgrades": "^3.8.0",
+  "ethers": "^6.13.5",
+  "hardhat": "^2.22.17"
+ },
+ "dependencies": {
+  "@openzeppelin/contracts": "^5.2.0",
+  "@openzeppelin/contracts-upgradeable": "^5.2.0",
+  "dotenv": "^16.4.7"
+ },
+ "scripts": {
+  "coverage": "npx hardhat coverage",
+  "test": "npx hardhat test",
+  "deploy": "npx hardhat run scripts/deploy-demo.ts --network sepolia",
+  "update": "npx hardhat run scripts/upgrade-demo.ts --network sepolia"
+ }
+}
