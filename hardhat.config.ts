@@ -10,7 +10,7 @@ const config: HardhatUserConfig = {
   token: "POL",
   gasPriceApi: process.env.COIN_MARKET_API,
   coinmarketcap: process.env.COIN_MARKET_API,
-  gasPrice: 68,
+  gasPrice: 3,
   enabled: true,
  },
  sourcify: {
